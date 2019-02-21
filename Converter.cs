@@ -22,7 +22,7 @@ namespace ConvertToBlackWhite
                 for (int j = 0; j < input.Width; j++)
                 {
                     Color pixelColor = input.GetPixel(i, j);
-                    if (pixelColor.GetBrightness() < 0.05) 
+                    if (pixelColor.GetBrightness() > 0.90) 
                     {
                         converted.SetPixel(i, j, Color.White);
                     } else
